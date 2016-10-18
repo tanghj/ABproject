@@ -1,0 +1,628 @@
+<html lang="ru">
+<head>
+<title>Material design for Bootstrap 3</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Stas Melnikov"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/doc.css"/>
+<link rel="stylesheet" href="css/material_theme.css"/>
+
+</head>
+<body>
+		<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Material design for Bootstrap 3</span>
+	</header>
+
+	<div class="dt-container dt-container_flex">
+		<aside class="navbar navbar__scroll">
+	<ul class="navbar__list">
+		<li><a href="../" class="navbar__link">Home</a></li>
+		<li>
+			<a href="doc_buttons.html" class="navbar__link">Buttons</a>
+			<ul class="navbar__list">
+				<li><a href="doc_buttons.html#buttons_sizing" class="navbar__link navbar__link_nested">Buttons sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_disabled" class="navbar__link navbar__link_nested">Buttons disabled state</a></li>
+				<li><a href="doc_buttons.html#buttons_group" class="navbar__link navbar__link_nested">Button groups</a></li>
+				<li><a href="doc_buttons.html#buttons_group_sizing" class="navbar__link navbar__link_nested">Button groups sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns" class="navbar__link navbar__link_nested">Button dropdowns</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns_sizing" class="navbar__link navbar__link_nested">Button dropdowns sizing</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_dropdown.html" class="navbar__link">Dropdonws</a>
+			<ul class="navbar__list">
+				<li><a href="doc_dropdown.html#dropdowns_headers" class="navbar__link navbar__link_nested">Dropdowns with headers</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_divider" class="navbar__link navbar__link_nested">Dropdowns with divider</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_disabled" class="navbar__link navbar__link_nested">Dropdowns with disabled menu items</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_inputs.html" class="navbar__link">Inputs</a>
+			<ul class="navbar__list">
+				<li><a href="doc_inputs.html#inputs_animated_state" class="navbar__link navbar__link_nested">Inputs animated state</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_textarea.html" class="navbar__link">Textarea</a>
+			<ul class="navbar__list">
+				<li><a href="doc_textarea.html#textarea_animated_state" class="navbar__link navbar__link_nested">Textarea animated state</a></li>
+			</ul>
+		</li>
+		<li><a href="doc_radiobox.html" class="navbar__link">Radiobox</a></li>
+		<li><a href="doc_checkbox.html" class="navbar__link">Checkbox</a></li>
+		<li><a href="doc_switch.html" class="navbar__link">Switch</a></li>
+		<li><a href="doc_accordion.html" class="navbar__link">Accordion</a></li>
+		<li><a href="doc_pills.html" class="navbar__link">Pills</a></li>
+		<li><a href="doc_tabs.html" class="navbar__link">Tabs</a></li>
+		<li><a href="doc_breadcrumbs.html" class="navbar__link">Breadcrumbs</a></li>
+		<li><a href="doc_pagination.html" class="navbar__link">Pagination</a></li>
+		<li><a href="doc_labels.html" class="navbar__link">Labels</a></li>
+		<li><a href="doc_badges.html" class="navbar__link">Badges</a></li>
+		<li><a href="doc_cards.html" class="navbar__link">Cards</a></li>
+		<li><a href="doc_alerts.html" class="navbar__link">Alerts</a></li>
+		<li><a href="doc_progress.html" class="navbar__link">Progress</a></li>
+		<li><a href="doc_media.html" class="navbar__link">Media</a></li>
+		<li><a href="doc_list_group.html" class="navbar__link">List Group</a></li>
+		<li><a href="doc_panels.html" class="navbar__link">Panel</a></li>
+		<li><a href="doc_modal.html" class="navbar__link">Modal</a></li>
+		<li><a href="doc_navbar.html" class="navbar__link">Navbar</a></li>
+	</ul>
+</aside>
+
+
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<h3 id="buttons" class="dt-title">Buttons</h3>
+				<button class="btn material-btn ">Button</button>
+	<button class="btn material-btn material-btn_primary ">Button</button>
+	<button class="btn material-btn material-btn_success ">Button</button>
+	<button class="btn material-btn material-btn_info ">Button</button>
+	<button class="btn material-btn material-btn_warning ">Button</button>
+	<button class="btn material-btn material-btn_danger ">Button</button>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;button class="btn material-btn"&gt;Button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_primary"&gt;Button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_success"&gt;Button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_info"&gt;Button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_warning"&gt;Button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_danger"&gt;Button&lt;/button&gt;
+
+			</code>
+		</pre>
+	</div>
+	
+
+			<h3 id="buttons_sizing" class="dt-title">Buttons sizing</h3>
+				
+		<button class="btn material-btn material-btn_lg">Large button</button>
+	
+	
+		<button class="btn material-btn material-btn_primary">Middle button</button>
+	
+	
+		<button class="btn material-btn material-btn_sm material-btn_success">Small button</button>
+	
+	
+		<button class="btn material-btn material-btn_xs material-btn_info">Extra small button</button>
+	
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;button class="btn material-btn material-btn_lg"&gt;Large button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_primary"&gt;Middle button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_sm material-btn_success"&gt;Small button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_xs material-btn_info"&gt;Extra small button&lt;/button&gt;
+			</code>
+		</pre>
+	</div>
+	
+
+			<h3 id="buttons_disabled" class="dt-title">Buttons disabled state</h3>
+				<button class="btn material-btn " disabled >button</button>
+	<button class="btn material-btn material-btn_primary " disabled >primary</button>
+	<button class="btn material-btn material-btn_success " disabled >success</button>
+	<button class="btn material-btn material-btn_info " disabled >info</button>
+	<button class="btn material-btn material-btn_warning " disabled >warning</button>
+	<button class="btn material-btn material-btn_danger " disabled >danger</button>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;button class="btn material-btn" disabled &gt;Disabled button&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_primary" disabled &gt;primary&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_success" disabled &gt;success&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_info" disabled &gt;info&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_warning" disabled &gt;warning&lt;/button&gt;
+&lt;button class="btn material-btn material-btn_danger" disabled &gt;danger&lt;/button&gt;
+			</code>
+		</pre>
+	</div>
+	
+				
+			<h3 id="buttons_group" class="dt-title">Button groups</h3>
+				<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn">Left</button>
+		<button type="button" class="btn material-btn">Middle</button>
+		<button type="button" class="btn material-btn">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn material-btn_primary">Left</button>
+		<button type="button" class="btn material-btn material-btn_primary">Middle</button>
+		<button type="button" class="btn material-btn material-btn_primary">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn material-btn_success">Left</button>
+		<button type="button" class="btn material-btn material-btn_success">Middle</button>
+		<button type="button" class="btn material-btn material-btn_success">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn material-btn_success"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_success"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_success"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn material-btn_info">Left</button>
+		<button type="button" class="btn material-btn material-btn_info">Middle</button>
+		<button type="button" class="btn material-btn material-btn_info">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn material-btn_info"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_info"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_info"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn material-btn_warning">Left</button>
+		<button type="button" class="btn material-btn material-btn_warning">Middle</button>
+		<button type="button" class="btn material-btn material-btn_warning">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="btn-group " role="group" aria-label="Basic example">
+		<button type="button" class="btn material-btn material-btn_danger">Left</button>
+		<button type="button" class="btn material-btn material-btn_danger">Middle</button>
+		<button type="button" class="btn material-btn material-btn_danger">Right</button>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group" role="group" aria-label="Basic example"&gt;
+ &lt;button type="button" class="btn material-btn material-btn_danger"&gt;Left&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_danger"&gt;Middle&lt;/button&gt;
+ &lt;button type="button" class="btn material-btn material-btn_danger"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+			
+			<h3 id="buttons_group_sizing" class="page-header">Button groups sizing</h3>
+				
+		<div class="btn-group material-btn_group material-btn-group_lg">
+			<button type="button" class="btn material-btn">Left</button>
+			<button type="button" class="btn material-btn">Middle</button>
+			<button type="button" class="btn material-btn">Right</button>
+		</div>
+	
+		
+		<div class="btn-group material-btn_group">
+			<button type="button" class="btn material-btn material-btn_primary">Left</button>
+			<button type="button" class="btn material-btn material-btn_primary">Middle</button>
+			<button type="button" class="btn material-btn material-btn_primary">Right</button>
+		</div>
+	
+		
+		<div class="btn-group material-btn_group material-btn-group_sm">
+			<button type="button" class="btn material-btn material-btn_warning">Left</button>
+			<button type="button" class="btn material-btn material-btn_warning">Middle</button>
+			<button type="button" class="btn material-btn material-btn_warning">Right</button>
+		</div>
+	
+			
+		<div class="btn-group material-btn_group material-btn-group_xs">
+			<button type="button" class="btn material-btn material-btn_success">Left</button>
+			<button type="button" class="btn material-btn material-btn_success">Middle</button>
+			<button type="button" class="btn material-btn material-btn_success">Right</button>
+		</div>
+	
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="bs-example" data-example-id="button-group-sizing"&gt;
+ &lt;div class="btn-group material-btn_group material-btn-group_lg"&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Right&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="btn-group material-btn_group"&gt;
+  &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn material-btn_primary"&gt;Right&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="btn-group material-btn material-btn_group_sm_group"&gt;
+  &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn material-btn_warning"&gt;Right&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="btn-group material-btn_group material-btn_group_xs"&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Left&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Middle&lt;/button&gt;
+  &lt;button type="button" class="btn material-btn"&gt;Right&lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+			
+			<h3 id="buttons_dropdowns" class="page-header">Button dropdowns</h3>
+			<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-btn material-dropdown-btn" data-toggle="dropdown">Default<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn" data-toggle="dropdown"&gt;Default&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+
+<div class="main-container__column">
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary" data-toggle="dropdown">Primary<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary" data-toggle="dropdown"&gt;Primary&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+
+<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-dropdown-btn material-btn material-btn_success" data-toggle="dropdown">Success<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_success" data-toggle="dropdown"&gt;Success&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+
+<div class="main-container__column">
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-dropdown-btn material-btn material-btn_info" data-toggle="dropdown">Info<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_info" data-toggle="dropdown"&gt;Info&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+<div class="main-container__column">
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-dropdown-btn material-btn material-btn_warning" data-toggle="dropdown">Warning<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_warning" data-toggle="dropdown"&gt;Warning&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+<div class="main-container__column">
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-dropdown-btn material-btn material-btn_danger" data-toggle="dropdown">Danger<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger" role="menu">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_danger" data-toggle="dropdown"&gt;Danger&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger" role="menu"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+			
+			<h3 id="buttons_dropdowns_sizing" class="page-header">Button dropdowns sizing</h3>
+			<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-btn material-dropdown-btn material-btn_primary material-btn_lg" data-toggle="dropdown">Primary<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary material-btn_lg" data-toggle="dropdown"&gt;Primary&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+
+
+<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-btn material-dropdown-btn material-btn_primary" data-toggle="dropdown">Primary<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary" data-toggle="dropdown"&gt;Primary&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+
+
+<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-btn material-dropdown-btn material-btn_primary material-btn_sm" data-toggle="dropdown">Primary<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary material-btn_sm" data-toggle="dropdown"&gt;Primary&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+
+
+<div class="main-container__column">	
+	<div class="btn-group material-btn-group">
+		<button class="dropdown-toggle material-btn material-dropdown-btn material-btn_primary material-btn_xs" data-toggle="dropdown">Primary<span class="caret material-btn__caret"></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li><a href="#" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="btn-group material-btn-group"&gt;
+ &lt;button class="dropdown-toggle material-dropdown-btn material-btn material-btn_primary material-btn_xs" data-toggle="dropdown"&gt;Primary&lt;span class="caret material-btn__caret"&gt;&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+
+			
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

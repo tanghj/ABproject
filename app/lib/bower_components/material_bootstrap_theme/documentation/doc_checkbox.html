@@ -1,0 +1,145 @@
+<html lang="ru">
+<head>
+<title>Material design for Bootstrap 3</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Stas Melnikov"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/doc.css"/>
+<link rel="stylesheet" href="css/material_theme.css"/>
+
+</head>
+<body>
+		<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Material design for Bootstrap 3</span>
+	</header>
+
+	<div class="dt-container dt-container_flex">
+		<aside class="navbar navbar__scroll">
+	<ul class="navbar__list">
+		<li><a href="../" class="navbar__link">Home</a></li>
+		<li>
+			<a href="doc_buttons.html" class="navbar__link">Buttons</a>
+			<ul class="navbar__list">
+				<li><a href="doc_buttons.html#buttons_sizing" class="navbar__link navbar__link_nested">Buttons sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_disabled" class="navbar__link navbar__link_nested">Buttons disabled state</a></li>
+				<li><a href="doc_buttons.html#buttons_group" class="navbar__link navbar__link_nested">Button groups</a></li>
+				<li><a href="doc_buttons.html#buttons_group_sizing" class="navbar__link navbar__link_nested">Button groups sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns" class="navbar__link navbar__link_nested">Button dropdowns</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns_sizing" class="navbar__link navbar__link_nested">Button dropdowns sizing</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_dropdown.html" class="navbar__link">Dropdonws</a>
+			<ul class="navbar__list">
+				<li><a href="doc_dropdown.html#dropdowns_headers" class="navbar__link navbar__link_nested">Dropdowns with headers</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_divider" class="navbar__link navbar__link_nested">Dropdowns with divider</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_disabled" class="navbar__link navbar__link_nested">Dropdowns with disabled menu items</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_inputs.html" class="navbar__link">Inputs</a>
+			<ul class="navbar__list">
+				<li><a href="doc_inputs.html#inputs_animated_state" class="navbar__link navbar__link_nested">Inputs animated state</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_textarea.html" class="navbar__link">Textarea</a>
+			<ul class="navbar__list">
+				<li><a href="doc_textarea.html#textarea_animated_state" class="navbar__link navbar__link_nested">Textarea animated state</a></li>
+			</ul>
+		</li>
+		<li><a href="doc_radiobox.html" class="navbar__link">Radiobox</a></li>
+		<li><a href="doc_checkbox.html" class="navbar__link">Checkbox</a></li>
+		<li><a href="doc_switch.html" class="navbar__link">Switch</a></li>
+		<li><a href="doc_accordion.html" class="navbar__link">Accordion</a></li>
+		<li><a href="doc_pills.html" class="navbar__link">Pills</a></li>
+		<li><a href="doc_tabs.html" class="navbar__link">Tabs</a></li>
+		<li><a href="doc_breadcrumbs.html" class="navbar__link">Breadcrumbs</a></li>
+		<li><a href="doc_pagination.html" class="navbar__link">Pagination</a></li>
+		<li><a href="doc_labels.html" class="navbar__link">Labels</a></li>
+		<li><a href="doc_badges.html" class="navbar__link">Badges</a></li>
+		<li><a href="doc_cards.html" class="navbar__link">Cards</a></li>
+		<li><a href="doc_alerts.html" class="navbar__link">Alerts</a></li>
+		<li><a href="doc_progress.html" class="navbar__link">Progress</a></li>
+		<li><a href="doc_media.html" class="navbar__link">Media</a></li>
+		<li><a href="doc_list_group.html" class="navbar__link">List Group</a></li>
+		<li><a href="doc_panels.html" class="navbar__link">Panel</a></li>
+		<li><a href="doc_modal.html" class="navbar__link">Modal</a></li>
+		<li><a href="doc_navbar.html" class="navbar__link">Navbar</a></li>
+	</ul>
+</aside>
+
+
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<h3 id="checkbox">Checkbox</h3>
+			<div class="main-container__column material-checkbox-group">
+	<input type="checkbox" id="checkbox0" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox0">Do you like it?</label>
+</div>
+<div class="main-container__column material-checkbox-group material-checkbox-group_primary">
+	<input type="checkbox" id="checkbox1" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox1">Primary</label>
+</div>		
+<div class="main-container__column material-checkbox-group material-checkbox-group_success">
+	<input type="checkbox" id="checkbox2" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox2">Success</label>
+</div>
+<div class="main-container__column material-checkbox-group material-checkbox-group_info">
+	<input type="checkbox" id="checkbox3" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox3">Info</label>
+</div>
+<div class="main-container__column material-checkbox-group material-checkbox-group_warning">
+	<input type="checkbox" id="checkbox4" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox4">Warning</label>
+</div>
+<div class="main-container__column material-checkbox-group material-checkbox-group_danger">
+	<input type="checkbox" id="checkbox5" name="checkbox" class="material-checkbox">
+	<label class="material-checkbox-group__label" for="checkbox5">Danger</label>
+</div>
+<div class="main-container__column material-checkbox-group">
+	<input type="checkbox" id="checkbox6" name="checkbox" class="material-checkbox" disabled>
+	<label class="material-checkbox-group__label" for="checkbox6">Disabled</label>
+</div>
+
+<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="material-checkbox-group"&gt;
+ &lt;input type="checkbox" id="checkbox" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox"&gt;Do you like it?&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="material-checkbox-group material-checkbox-group_primary"&gt;
+ &lt;input type="checkbox" id="checkbox1" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox1"&gt;Primary&lt;/label&gt;
+&lt;/div&gt;		
+&lt;div class="material-checkbox-group material-checkbox-group_success"&gt;
+ &lt;input type="checkbox" id="checkbox2" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox2"&gt;Success&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="material-checkbox-group material-checkbox-group_info"&gt;
+ &lt;input type="checkbox" id="checkbox3" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox3"&gt;Info&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="material-checkbox-group material-checkbox-group_warning"&gt;
+ &lt;input type="checkbox" id="checkbox4" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox4"&gt;Warning&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="material-checkbox-group material-checkbox-group_danger"&gt;
+ &lt;input type="checkbox" id="checkbox5" name="checkbox" class="material-checkbox"&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox5"&gt;Danger&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="material-checkbox-group"&gt;
+ &lt;input type="checkbox" id="checkbox6" name="checkbox" class="material-checkbox" disabled&gt;
+ &lt;label class="material-checkbox-group__label" for="checkbox6"&gt;disabled&lt;/label&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

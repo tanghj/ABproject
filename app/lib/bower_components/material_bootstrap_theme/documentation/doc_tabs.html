@@ -1,0 +1,285 @@
+<html lang="ru">
+<head>
+<title>Material design for Bootstrap 3</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Stas Melnikov"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/doc.css"/>
+<link rel="stylesheet" href="css/material_theme.css"/>
+
+</head>
+<body>
+		<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Material design for Bootstrap 3</span>
+	</header>
+
+	<div class="dt-container dt-container_flex">
+		<aside class="navbar navbar__scroll">
+	<ul class="navbar__list">
+		<li><a href="../" class="navbar__link">Home</a></li>
+		<li>
+			<a href="doc_buttons.html" class="navbar__link">Buttons</a>
+			<ul class="navbar__list">
+				<li><a href="doc_buttons.html#buttons_sizing" class="navbar__link navbar__link_nested">Buttons sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_disabled" class="navbar__link navbar__link_nested">Buttons disabled state</a></li>
+				<li><a href="doc_buttons.html#buttons_group" class="navbar__link navbar__link_nested">Button groups</a></li>
+				<li><a href="doc_buttons.html#buttons_group_sizing" class="navbar__link navbar__link_nested">Button groups sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns" class="navbar__link navbar__link_nested">Button dropdowns</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns_sizing" class="navbar__link navbar__link_nested">Button dropdowns sizing</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_dropdown.html" class="navbar__link">Dropdonws</a>
+			<ul class="navbar__list">
+				<li><a href="doc_dropdown.html#dropdowns_headers" class="navbar__link navbar__link_nested">Dropdowns with headers</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_divider" class="navbar__link navbar__link_nested">Dropdowns with divider</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_disabled" class="navbar__link navbar__link_nested">Dropdowns with disabled menu items</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_inputs.html" class="navbar__link">Inputs</a>
+			<ul class="navbar__list">
+				<li><a href="doc_inputs.html#inputs_animated_state" class="navbar__link navbar__link_nested">Inputs animated state</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_textarea.html" class="navbar__link">Textarea</a>
+			<ul class="navbar__list">
+				<li><a href="doc_textarea.html#textarea_animated_state" class="navbar__link navbar__link_nested">Textarea animated state</a></li>
+			</ul>
+		</li>
+		<li><a href="doc_radiobox.html" class="navbar__link">Radiobox</a></li>
+		<li><a href="doc_checkbox.html" class="navbar__link">Checkbox</a></li>
+		<li><a href="doc_switch.html" class="navbar__link">Switch</a></li>
+		<li><a href="doc_accordion.html" class="navbar__link">Accordion</a></li>
+		<li><a href="doc_pills.html" class="navbar__link">Pills</a></li>
+		<li><a href="doc_tabs.html" class="navbar__link">Tabs</a></li>
+		<li><a href="doc_breadcrumbs.html" class="navbar__link">Breadcrumbs</a></li>
+		<li><a href="doc_pagination.html" class="navbar__link">Pagination</a></li>
+		<li><a href="doc_labels.html" class="navbar__link">Labels</a></li>
+		<li><a href="doc_badges.html" class="navbar__link">Badges</a></li>
+		<li><a href="doc_cards.html" class="navbar__link">Cards</a></li>
+		<li><a href="doc_alerts.html" class="navbar__link">Alerts</a></li>
+		<li><a href="doc_progress.html" class="navbar__link">Progress</a></li>
+		<li><a href="doc_media.html" class="navbar__link">Media</a></li>
+		<li><a href="doc_list_group.html" class="navbar__link">List Group</a></li>
+		<li><a href="doc_panels.html" class="navbar__link">Panel</a></li>
+		<li><a href="doc_modal.html" class="navbar__link">Modal</a></li>
+		<li><a href="doc_navbar.html" class="navbar__link">Navbar</a></li>
+	</ul>
+</aside>
+
+
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<h3 id="tabs">Tabs</h3>				
+				<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs">
+			<li class="active"><a href="#home" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+		
+	<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs material-tabs_primary">
+			<li class="active"><a href="#home1" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile1" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>		
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home1">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile1">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs material-tabs_primary"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home1" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile1" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home1"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile1"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+		
+	<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs material-tabs_success">
+			<li class="active"><a href="#home2" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile2" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>		
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home2">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile2">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>		
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs material-tabs_success"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home2" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile2" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home2"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile2"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>		
+		
+	<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs material-tabs_info">
+			<li class="active"><a href="#home3" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile3" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>		
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home3">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile3">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>		
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs material-tabs_info"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home3" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile3" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home3"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile3"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>		
+		
+	<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs material-tabs_danger">
+			<li class="active"><a href="#home4" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile4" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>		
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home4">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile4">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs material-tabs_danger"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home4" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile4" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home4"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile4"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+		
+	<div class="panel-group material-tabs-group">
+		<ul class="nav nav-tabs material-tabs material-tabs_warning">
+			<li class="active"><a href="#home5" class="material-tabs__tab-link" data-toggle="tab">Home</a></li>
+			<li><a href="#profile5" class="material-tabs__tab-link" data-toggle="tab">Profile</a></li>
+			<li><a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled">disabled</a></li>
+		</ul>		
+		<div class="tab-content materail-tabs-content">
+			<div class="tab-pane fade active in" id="home5">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+			<div class="tab-pane fade" id="profile5">
+				<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;div class="panel-group material-tabs-group"&gt;
+ &lt;ul class="nav nav-tabs material-tabs material-tabs_warning"&gt;
+  &lt;li class="active"&gt;&lt;a href="#home5" class="material-tabs__tab-link" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile5" class="material-tabs__tab-link" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="javascript:void(0)" class="material-tabs__tab-link material-tabs__tab-link_disabled"&gt;disabled&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div id="myTabContent" class="tab-content materail-tabs-content"&gt;
+  &lt;div class="tab-pane fade active in" id="home5"&gt;...&lt;/div&gt;
+  &lt;div class="tab-pane fade" id="profile5"&gt;...&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+		
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

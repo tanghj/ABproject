@@ -1,0 +1,772 @@
+<html lang="ru">
+<head>
+<title>Material design for Bootstrap 3</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Stas Melnikov"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/doc.css"/>
+<link rel="stylesheet" href="css/material_theme.css"/>
+
+</head>
+<body>
+		<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Material design for Bootstrap 3</span>
+	</header>
+
+	<div class="dt-container dt-container_flex">
+		<aside class="navbar navbar__scroll">
+	<ul class="navbar__list">
+		<li><a href="../" class="navbar__link">Home</a></li>
+		<li>
+			<a href="doc_buttons.html" class="navbar__link">Buttons</a>
+			<ul class="navbar__list">
+				<li><a href="doc_buttons.html#buttons_sizing" class="navbar__link navbar__link_nested">Buttons sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_disabled" class="navbar__link navbar__link_nested">Buttons disabled state</a></li>
+				<li><a href="doc_buttons.html#buttons_group" class="navbar__link navbar__link_nested">Button groups</a></li>
+				<li><a href="doc_buttons.html#buttons_group_sizing" class="navbar__link navbar__link_nested">Button groups sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns" class="navbar__link navbar__link_nested">Button dropdowns</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns_sizing" class="navbar__link navbar__link_nested">Button dropdowns sizing</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_dropdown.html" class="navbar__link">Dropdonws</a>
+			<ul class="navbar__list">
+				<li><a href="doc_dropdown.html#dropdowns_headers" class="navbar__link navbar__link_nested">Dropdowns with headers</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_divider" class="navbar__link navbar__link_nested">Dropdowns with divider</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_disabled" class="navbar__link navbar__link_nested">Dropdowns with disabled menu items</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_inputs.html" class="navbar__link">Inputs</a>
+			<ul class="navbar__list">
+				<li><a href="doc_inputs.html#inputs_animated_state" class="navbar__link navbar__link_nested">Inputs animated state</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_textarea.html" class="navbar__link">Textarea</a>
+			<ul class="navbar__list">
+				<li><a href="doc_textarea.html#textarea_animated_state" class="navbar__link navbar__link_nested">Textarea animated state</a></li>
+			</ul>
+		</li>
+		<li><a href="doc_radiobox.html" class="navbar__link">Radiobox</a></li>
+		<li><a href="doc_checkbox.html" class="navbar__link">Checkbox</a></li>
+		<li><a href="doc_switch.html" class="navbar__link">Switch</a></li>
+		<li><a href="doc_accordion.html" class="navbar__link">Accordion</a></li>
+		<li><a href="doc_pills.html" class="navbar__link">Pills</a></li>
+		<li><a href="doc_tabs.html" class="navbar__link">Tabs</a></li>
+		<li><a href="doc_breadcrumbs.html" class="navbar__link">Breadcrumbs</a></li>
+		<li><a href="doc_pagination.html" class="navbar__link">Pagination</a></li>
+		<li><a href="doc_labels.html" class="navbar__link">Labels</a></li>
+		<li><a href="doc_badges.html" class="navbar__link">Badges</a></li>
+		<li><a href="doc_cards.html" class="navbar__link">Cards</a></li>
+		<li><a href="doc_alerts.html" class="navbar__link">Alerts</a></li>
+		<li><a href="doc_progress.html" class="navbar__link">Progress</a></li>
+		<li><a href="doc_media.html" class="navbar__link">Media</a></li>
+		<li><a href="doc_list_group.html" class="navbar__link">List Group</a></li>
+		<li><a href="doc_panels.html" class="navbar__link">Panel</a></li>
+		<li><a href="doc_modal.html" class="navbar__link">Modal</a></li>
+		<li><a href="doc_navbar.html" class="navbar__link">Navbar</a></li>
+	</ul>
+</aside>
+
+
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<h3 id="dropdowns">Dropdowns</h3>
+				
+	<div class="dropdown material-dropdown ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_primary ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_primary"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="dropdown material-dropdown material-dropdown_success ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_success"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="dropdown material-dropdown material-dropdown_info ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_info"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_danger ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_danger"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+
+	<div class="dropdown material-dropdown material-dropdown_warning ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning">
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_warning"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn"data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning"&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+
+			
+			<h3 id="dropdowns_headers">Dropdowns with headers</h3>
+				
+	<div class="dropdown material-dropdown ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_primary ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_primary"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_success ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_success"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_info ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_info"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_danger ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_danger"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_warning ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_warning"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+			
+			<h3 id="dropdowns_divider">Dropdowns with divider</h3>
+				
+	<div class="dropdown material-dropdown ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_primary ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_primary"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>	
+	
+	<div class="dropdown material-dropdown material-dropdown_success ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_success"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_info ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_info"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_danger ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_danger"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>		
+	
+	<div class="dropdown material-dropdown material-dropdown_warning ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link ">Another action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_warning"&gt;			
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning"&gt;
+  &lt;li class="material-dropdown-menu__link dropdown-header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+			
+			<h3 id="dropdowns_disabled">Dropdowns with disabled menu items</h3>
+				
+	<div class="dropdown material-dropdown ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_primary ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_primary"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_success ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_success"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_success"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_info ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_info">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown-menu_info"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown_info"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_warning ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">Dropdown<span class="caret material-dropdown__caret "></span></button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_warning"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_warning"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+	
+	<div class="dropdown material-dropdown material-dropdown_danger ">
+		<button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown">
+			Dropdown
+			<span class="caret material-dropdown__caret "></span>
+		</button>
+		<ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger">
+			<li class="dropdown-header material-dropdown__header">Dropdown header</li>
+			<li><a href="#0" class="material-dropdown-menu__link">Action</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled">Disabled link</a></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Something else here</a></li>
+			<li class="divider material-dropdown__divider"></li>
+			<li><a href="#0" class="material-dropdown-menu__link">Separated link</a></li>
+		</ul>
+	</div>
+	
+	<div class="highlight example_code">
+		<pre>
+			<code class="language-html" data-lang="html">
+&lt;div class="dropdown material-dropdown material-dropdown_danger"&gt;
+ &lt;button class="dropdown-toggle material-dropdown__btn" data-toggle="dropdown"&gt;Dropdown&lt;span class="caret material-dropdown__caret ">&lt;/span&gt;&lt;/button&gt;
+ &lt;ul class="dropdown-menu material-dropdown-menu material-dropdown-menu_danger"&gt;
+  &lt;li class="dropdown-header material-dropdown__header"&gt;Dropdown header&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Action&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link material-dropdown-menu__link_disabled"&gt;Disabled link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="divider material-dropdown__divider"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#0" class="material-dropdown-menu__link"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+	</div>
+
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

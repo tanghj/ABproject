@@ -1,0 +1,40 @@
+{
+  "name": "material_bootstrap_theme",
+  "description": "Material design for Bootstrap",
+  "main": [
+    "material_bootstrap_theme.css",
+    "material_bootstrap_theme.less",
+    "material_bootstrap_theme.scss"
+  ],
+  "authors": [
+    "Stas Melnikov http://stas-melnikov.ru"
+  ],
+  "license": "MIT",
+  "homepage": "http://stas-melnikov.ru/material_bootstrap_theme/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bootstrap",
+    "demo",
+    "dist",
+    "html",
+    "icons",
+    "libs",
+    ".bower.json",
+    ".gitignore",
+    "gulpfile.js",
+    "package.json",
+    "README.html",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "bootstrap",
+    "material design",
+    "less bootstrap",
+    "scss bootstrap"
+  ],
+  "version": "1.1.1",
+  "dependencies": {}
+}

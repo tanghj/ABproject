@@ -1,0 +1,194 @@
+<html lang="ru">
+<head>
+<title>Material design for Bootstrap 3</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Stas Melnikov"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/doc.css"/>
+<link rel="stylesheet" href="css/material_theme.css"/>
+
+</head>
+<body>
+		<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Material design for Bootstrap 3</span>
+	</header>
+
+	<div class="dt-container dt-container_flex">
+		<aside class="navbar navbar__scroll">
+	<ul class="navbar__list">
+		<li><a href="../" class="navbar__link">Home</a></li>
+		<li>
+			<a href="doc_buttons.html" class="navbar__link">Buttons</a>
+			<ul class="navbar__list">
+				<li><a href="doc_buttons.html#buttons_sizing" class="navbar__link navbar__link_nested">Buttons sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_disabled" class="navbar__link navbar__link_nested">Buttons disabled state</a></li>
+				<li><a href="doc_buttons.html#buttons_group" class="navbar__link navbar__link_nested">Button groups</a></li>
+				<li><a href="doc_buttons.html#buttons_group_sizing" class="navbar__link navbar__link_nested">Button groups sizing</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns" class="navbar__link navbar__link_nested">Button dropdowns</a></li>
+				<li><a href="doc_buttons.html#buttons_dropdowns_sizing" class="navbar__link navbar__link_nested">Button dropdowns sizing</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_dropdown.html" class="navbar__link">Dropdonws</a>
+			<ul class="navbar__list">
+				<li><a href="doc_dropdown.html#dropdowns_headers" class="navbar__link navbar__link_nested">Dropdowns with headers</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_divider" class="navbar__link navbar__link_nested">Dropdowns with divider</a></li>
+				<li><a href="doc_dropdown.html#dropdowns_disabled" class="navbar__link navbar__link_nested">Dropdowns with disabled menu items</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_inputs.html" class="navbar__link">Inputs</a>
+			<ul class="navbar__list">
+				<li><a href="doc_inputs.html#inputs_animated_state" class="navbar__link navbar__link_nested">Inputs animated state</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="doc_textarea.html" class="navbar__link">Textarea</a>
+			<ul class="navbar__list">
+				<li><a href="doc_textarea.html#textarea_animated_state" class="navbar__link navbar__link_nested">Textarea animated state</a></li>
+			</ul>
+		</li>
+		<li><a href="doc_radiobox.html" class="navbar__link">Radiobox</a></li>
+		<li><a href="doc_checkbox.html" class="navbar__link">Checkbox</a></li>
+		<li><a href="doc_switch.html" class="navbar__link">Switch</a></li>
+		<li><a href="doc_accordion.html" class="navbar__link">Accordion</a></li>
+		<li><a href="doc_pills.html" class="navbar__link">Pills</a></li>
+		<li><a href="doc_tabs.html" class="navbar__link">Tabs</a></li>
+		<li><a href="doc_breadcrumbs.html" class="navbar__link">Breadcrumbs</a></li>
+		<li><a href="doc_pagination.html" class="navbar__link">Pagination</a></li>
+		<li><a href="doc_labels.html" class="navbar__link">Labels</a></li>
+		<li><a href="doc_badges.html" class="navbar__link">Badges</a></li>
+		<li><a href="doc_cards.html" class="navbar__link">Cards</a></li>
+		<li><a href="doc_alerts.html" class="navbar__link">Alerts</a></li>
+		<li><a href="doc_progress.html" class="navbar__link">Progress</a></li>
+		<li><a href="doc_media.html" class="navbar__link">Media</a></li>
+		<li><a href="doc_list_group.html" class="navbar__link">List Group</a></li>
+		<li><a href="doc_panels.html" class="navbar__link">Panel</a></li>
+		<li><a href="doc_modal.html" class="navbar__link">Modal</a></li>
+		<li><a href="doc_navbar.html" class="navbar__link">Navbar</a></li>
+	</ul>
+</aside>
+
+
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<h3 id="breadcrumbs">Breadcrumbs</h3>				
+					<ol class="breadcrumb material-breadcrumb">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+		
+		
+		<ol class="breadcrumb material-breadcrumb material-breadcrumb_primary">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb material-breadcrumb_primary"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+			
+
+		<ol class="breadcrumb material-breadcrumb material-breadcrumb_success">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb material-breadcrumb_success"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+			
+
+		<ol class="breadcrumb material-breadcrumb material-breadcrumb_info">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb material-breadcrumb_info"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+			
+
+		<ol class="breadcrumb material-breadcrumb material-breadcrumb_danger">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb material-breadcrumb_danger"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+		
+
+		<ol class="breadcrumb material-breadcrumb material-breadcrumb_warning">
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Home</a></li>
+			<li class="material-breadcrumb__item"><a href="#" class="material-breadcrumb__link">Library</a></li>
+			<li class="material-breadcrumb__item"><span class="material-breadcrumb__active-element">Data</span></li>
+		</ol>
+		
+		<div class="highlight example_code">
+			<pre>
+				<code class="language-html" data-lang="html">
+&lt;ol class="breadcrumb material-breadcrumb material-breadcrumb_warning"&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#" class="material-breadcrumb__link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+				</code>
+			</pre>
+		</div>
+				
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>
